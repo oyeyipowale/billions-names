@@ -23,5 +23,8 @@
   "homepage": "https://github.com/oyeyipowale/billions-names#readme",
   "dependencies": {
     "unique-random-array": "2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "6.6.0"
   }
 }
