@@ -1,11 +1,12 @@
 {
   "name": "billions-names",
-  "version": "0.0.0-development",
+  "version": "0.0.0-semantically-released",
   "description": "Get random Billions TV Series star cast name",
   "main": "src/index.js",
   "scripts": {
     "test": "mocha src/index.test.js -w",
-    "semantic-release": "semantic-release"
+    "test:single": "mocha src/index.test.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
@@ -27,8 +28,15 @@
   },
   "devDependencies": {
     "chai": "4.2.0",
+    "commitizen": "4.0.3",
+    "cz-conventional-changelog": "3.0.2",
     "eslint": "6.6.0",
     "mocha": "6.2.2",
     "semantic-release": "^15.13.30"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
