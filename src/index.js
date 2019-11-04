@@ -2,6 +2,9 @@ let billionsNames = require("./billions-names.json");
 let uniqueRandomArray = require("unique-random-array");
 let getRandomItem = uniqueRandomArray(billionsNames);
 
+// package.json husky settings
+// "pre-push": "npm run test:single"
+
 module.exports = {
   all: billionsNames,
   random: random
