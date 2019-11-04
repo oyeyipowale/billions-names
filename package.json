@@ -32,8 +32,15 @@
     "commitizen": "4.0.3",
     "cz-conventional-changelog": "3.0.2",
     "eslint": "6.6.0",
+    "husky": "3.0.9",
     "mocha": "6.2.2",
     "semantic-release": "^15.13.30"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test:single",
+      "pre-push": "npm run test:single"
+    }
   },
   "config": {
     "commitizen": {
