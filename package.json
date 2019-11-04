@@ -1,0 +1,27 @@
+{
+  "name": "billions-names",
+  "version": "1.0.0",
+  "description": "Get random Billions TV Series star cast name",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oyeyipowale/billions-names.git"
+  },
+  "keywords": [
+    "Billions",
+    "Random",
+    "Name"
+  ],
+  "author": "Olawale Oyeyipo <olaclassik@gmail.com> (http://www.walegiga.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oyeyipowale/billions-names/issues"
+  },
+  "homepage": "https://github.com/oyeyipowale/billions-names#readme",
+  "dependencies": {
+    "unique-random-array": "2.0.0"
+  }
+}
