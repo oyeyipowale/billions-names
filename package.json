@@ -1,14 +1,15 @@
 {
   "name": "billions-names",
-  "version": "1.2.0-beta.0",
+  "version": "0.0.0-development",
   "description": "Get random Billions TV Series star cast name",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha src/index.test.js -w",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oyeyipowale/billions-names.git"
+    "url": "https://github.com/oyeyipowale/billions-names.git"
   },
   "keywords": [
     "Billions",
@@ -25,6 +26,9 @@
     "unique-random-array": "2.0.0"
   },
   "devDependencies": {
-    "eslint": "6.6.0"
+    "chai": "4.2.0",
+    "eslint": "6.6.0",
+    "mocha": "6.2.2",
+    "semantic-release": "^15.13.30"
   }
 }
