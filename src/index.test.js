@@ -20,12 +20,12 @@ describe("billions-names", function() {
 
   describe("random", function() {
     it("should return a random item from the billions.all", function() {
-      var randomItem = billions.random();
+      let randomItem = billions.random();
       expect(billions.all).to.include(randomItem);
     });
 
     it("should return an array of random items if passed a number", function() {
-      var randomItems = billions.random(3);
+      let randomItems = billions.random(3);
       expect(randomItems).to.have.length(3);
       randomItems.forEach(function(item) {
         expect(billions.all).to.include(item);
