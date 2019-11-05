@@ -4,11 +4,14 @@
   "description": "Get random Billions TV Series star cast name",
   "main": "src/index.js",
   "scripts": {
+    "coverage": "nyc --reporter=html --reporter=text npm run test:single",
+    "check-coverage": "nyc report --reporter=text-lcov | coveralls",
     "cz": "git-cz",
+    "lint": "eslint .",
+    "nyc": "nyc --help",
+    "semantic-release": "semantic-release",
     "test": "mocha src/index.test.js -w",
-    "test:single": "mocha src/index.test.js",
-    "coverage": "nyc npm run test:single",
-    "semantic-release": "semantic-release"
+    "test:single": "mocha src/index.test.js"
   },
   "repository": {
     "type": "git",
@@ -31,6 +34,7 @@
   "devDependencies": {
     "chai": "4.2.0",
     "commitizen": "4.0.3",
+    "coveralls": "3.0.7",
     "cz-conventional-changelog": "3.0.2",
     "eslint": "6.6.0",
     "husky": "3.0.9",
@@ -40,7 +44,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run test:single"
+      "pre-commit": "npm run test:single && npm run coverage && npm run check-coverage"
     }
   },
   "config": {
